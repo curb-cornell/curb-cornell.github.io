@@ -1,0 +1,72 @@
+<!-- Template for every page. Client must provide: 
+SITE_URL - URL of site (with trailing slash)
+TITLE - Title of site
+HEADER - Header bar (will be generated from header-template.html)
+CONTENT - Main content (will be generated from post-template.html)
+NAV_LINK - Context-based address to link to (depending on the page)
+NAV_TEXT - The text of the NAV_LINK
+FOOTER - Footer bar (will be generated from footer-template.html)  -->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>CURB</title>
+</head>
+<body>
+  <!-- Template for site header. Client must provide:
+SITE_URL: URL of site (with trailing slash)
+TITLE: Title of site.
+TAGLINE: Tagline.
+MENU: Navigation bar. -->
+
+<div class="header">
+  <a href="./index.html" class="header-title">
+    CURB
+  </a>
+  <span id="insignia"><img src="./assets/cu-logo.png" /></span>
+  <div class="header-tagline">
+    Cornell Undergraduate Research Board
+  </div>
+  <div class="header-menu">
+    <nav class="nav-bar"><ul><li><a href="./index.html">Home</a></li><li><a href="#">Events</a><ul></ul></li><li><a href="#">Mentorship</a><ul></ul></li><li><a href="#">Research</a><ul></ul></li></ul></nav>
+  </div>
+</div>
+
+  <div class="content">
+    <!-- Template for each post. Client must provide:
+POST_DATE: Date posted.
+POST_TITLE: Title of post.
+POST_CONTENT: HTML (not Markdown) content of post. -->
+
+<article class="post">
+  <header class="post-header">
+    <div class="post-meta">
+      14 Dec 2015
+    </div>
+    <div class="post-title">
+      First G-Body Meeting
+    </div>
+  </header>
+  <section class="post-content">
+    <p>If you missed CURB's first G-body meeting, you can see here what you missed!</p>
+<ul>
+<li>First thing</li>
+<li>Second thing</li>
+<li>Third thing</li>
+</ul>
+  </section>
+</article>
+
+  </div>
+  <!-- Template for site footer. Client must provide:
+AUTHOR: Author of site. -->
+
+<div class="footer">
+  <div>Powered by <a href="https://github.com/qema/nanosite">nanosite</a>.</div>
+  Copyright Cornell Undergraduate Research Board.
+</div>
+
+</body>
+</html>

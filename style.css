@@ -1,0 +1,148 @@
+body {
+    font-family: "SF UI Text";
+    margin-top: 2em;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(36, 82, 129);
+}
+
+#insignia {
+    float: right;
+}
+#insignia img {
+    width: auto;
+    height: 4.8em;
+}
+
+.header {
+    text-align: left;
+    margin-top: 1.2em;
+    margin-bottom: 2em;
+    margin-left: 1.2em;
+}
+
+.header-title {
+    font-family: "SF UI Display";
+    font-size: 4.8em;
+    color: white;
+    text-decoration: none;
+}
+
+.header-title:hover {
+    color: #ccffff;
+}
+
+.header-tagline {
+    color: black;
+    font-size: 1.3em;
+}
+
+.nav-bar {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: -1.5em; /* hack */
+}
+
+.nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.nav-bar li {
+    display: inline;
+    float: center;
+    padding: 1.5em;
+    position: relative;
+}
+  
+.nav-bar li a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+
+.nav-bar li:hover {
+    cursor: pointer;
+}
+
+.nav-bar ul li ul {
+    visibility: hidden;
+    min-width: 150px;
+    position: absolute;
+    text-align: left;
+    left: 0;
+    z-index: 999;
+}
+
+.nav-bar ul li a:hover {
+    color: #ccffff;
+}
+
+.nav-bar ul li:hover > ul,
+.nav-bar ul li ul:hover {
+    visibility: visible;
+}
+
+.nav-bar ul li ul li {
+    clear: both;
+    padding: 0 0 0 1em;
+    width: 100%;
+    display: block;
+}
+
+.nav-bar ul li ul li a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.content {
+    /*
+    background: rgba(238, 238, 238, 0.50);
+    border-radius: 25px;
+    padding: 2em;*/
+}
+
+.post {
+    background: lightgray;
+    border-radius: 20px;
+    padding: 1.2em;
+    margin-bottom: 2em;
+}
+
+.page-title, .post-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "SF UI Display";
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+}
+
+.post-meta {
+    font-size: 0.8em;
+}
+
+p, .bottom-nav {
+    font-size: 1em;
+}
+
+a {
+    color: black;
+}
+a:hover {
+    color: #00366c;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+.footer {
+    margin-top: 1em;
+    color: lightgray;
+    text-align: center;
+    font-size: 0.8em;
+    margin-bottom: 2em;
+}
