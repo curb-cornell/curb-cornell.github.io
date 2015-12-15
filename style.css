@@ -13,7 +13,7 @@ body {
     margin-top: 2em;
     margin-left: 10%;
     margin-right: 10%;
-    background-color: rgb(36, 82, 129);
+    background-color: #245281;
 }
 
 #insignia {
@@ -83,6 +83,9 @@ body {
 .nav-bar ul li:hover {
     cursor: default;
     background: white;
+    border-radius: 10px 10px 0px 0px;
+}
+.nav-bar ul li:first-child:hover { /* home button */
     border-radius: 10px;
 }
 
@@ -103,7 +106,8 @@ body {
 .nav-bar ul li ul:hover {
     visibility: visible;
     background: white;
-    border-radius: 0 10px 10px 10px;
+    margin-top: 0.45em;
+    border-radius: 0px 10px 10px 10px;
 }
 
 .nav-bar ul li ul li {
@@ -130,6 +134,12 @@ body {
     border-radius: 20px;
     padding: 2em;
     margin-bottom: 2em;
+}
+
+.post img, .page img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .page-title, .post-title {
