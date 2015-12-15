@@ -1,5 +1,15 @@
+@font-face { /* SF UI display */
+    font-family: titleFont;
+    src: url(assets/fonts/SF-UI-Display-Ultralight.otf)
+}
+
+@font-face { /* SF UI text */
+    font-family: bodyFont;
+    src: url(assets/fonts/SF-UI-Text-Light.otf)
+}
+
 body {
-    font-family: "SF UI Text";
+    font-family: bodyFont;
     margin-top: 2em;
     margin-left: 10%;
     margin-right: 10%;
@@ -22,7 +32,7 @@ body {
 }
 
 .header-title {
-    font-family: "SF UI Display";
+    font-family: titleFont;
     font-size: 4.8em;
     color: white;
     text-decoration: none;
@@ -47,7 +57,7 @@ body {
     display: block;
     margin-top: 1em;
     margin-bottom: 1em;
-    margin-left: -1.5em; /* hack */
+    margin-left: -1.5em;
 }
 
 .nav-bar ul {
@@ -115,7 +125,7 @@ body {
     padding: 2em;*/
 }
 
-.post {
+.post, .page {
     background: lightgray;
     border-radius: 20px;
     padding: 2em;
@@ -125,7 +135,7 @@ body {
 .page-title, .post-title {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: "SF UI Display";
+    font-family: titleFont;
     font-size: 2em;
     font-weight: bold;
     color: black;
