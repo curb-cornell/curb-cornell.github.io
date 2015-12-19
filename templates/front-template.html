@@ -1,3 +1,39 @@
 <!-- Template for front page. Client must provide:
 POSTS: Content of all frontpage posts. -->
+
+<div id="front-banner">
+  <img src="./images/poster.jpg">
+</div>
+<article class="post" id="front-post">
+  <header class="post-header">
+    <section class="post-content">
+      <p>The <b>Cornell Undergraduate Research Board</b> encourages and enhances undergraduate research at Cornell University. CURB hosts several events each year, including the Spring Forum, which spotlights undergraduate research with keynote speech and poster sessions. <a href="about-us.html">Learn more</a></p>
+    </section>
+  </header>
+</article>
+
 $POSTS$
+
+<article class="post" id="join-curb">
+  <header class="post-header">
+    <div class="post-title">
+      Join CURB
+    </div>
+  </header>
+  <section class="post-content">
+    <p>
+      Sign up to join our mailing list.
+      <form action="#" method="GET">
+	<div class="form-entry">
+	  <label for="name">Name:</label>
+	  <input type="text" name="name" id="name">
+	</div>
+	<div class="form-entry">
+	  <label for="netid">NetID:</label>
+	  <input type="text" name="netid" id="netid"><br>
+	</div>
+	<input type="submit" name="submit" id="submit" value="Sign Up">
+      </form>
+    </p>
+  </section>
+</article>

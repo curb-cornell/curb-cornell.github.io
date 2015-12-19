@@ -1,6 +1,6 @@
 title: About Us
 
-![The Team]($img$team-pic.jpg)
+![The Team]($img$team.jpg)
 
 The Cornell Undergraduate Research Board (CURB) seeks to enhance the Cornell undergraduate experience by promoting and enriching undergraduate research on campus. CURB is committed to fostering academic excellence through undergraduate interaction at events that bring student endeavors to the forefront of the Cornell community's attention.
 

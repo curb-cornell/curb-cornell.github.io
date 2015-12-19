@@ -11,9 +11,9 @@
 body {
     font-family: bodyFont;
     margin-top: 2em;
+    background-color: #27588b;
     margin-left: 10%;
     margin-right: 10%;
-    background-color: #245281;
 }
 
 #insignia {
@@ -140,6 +140,29 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+    vertical-align: middle;
+    margin-right: 2em;
+}
+
+#front-banner img {
+    border-radius: 20px 20px;
+    max-width: 100%;
+    display: block;
+}
+#front-post {
+    padding-top: 0.5em;
+    display: block;
+    border-radius: 0 0 20px 20px;
+    background: none;
+    color: white;
+    margin-bottom: 0;
+    padding-bottom: 2em;
+}
+#front-post a {
+    color: white;
+}
+#front-post a:hover {
+    color: #ccffff;
 }
 
 .page-title, .post-title {
@@ -183,4 +206,40 @@ h2 {
 }
 .footer a:hover {
     color: #ccffff;
+}
+
+label {
+    float: left;
+    width: 5%;
+}
+
+.form-entry {
+    margin: 0.5em 0;
+    vertical-align: middle;
+}
+
+#name, #netid {
+    border: none;
+    height: 1.5em;
+}
+
+#submit {
+    color: black;
+    background: white;
+    border-radius: 10px;
+    padding: 0.5em;
+    font-family: bodyFont;
+    font-size: 12pt;
+    border: none;
+    margin-top: 0.5em;
+}
+
+#submit:hover {
+    background: #eee;
+    color: black;
+}
+
+#join-curb {
+    border: 3px solid;
+    border-color: #90288a;
 }
