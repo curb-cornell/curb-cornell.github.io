@@ -45,7 +45,7 @@ body {
 }
 
 .header-title:hover {
-    color: #ccffff;
+    color: #05c0ff;
 }
 
 .header-tagline {
@@ -118,8 +118,8 @@ body {
 }
 
 .nav-bar ul li ul li a:hover {
+    color: #cc0000;
     text-decoration: none;
-    color: #245281;
 }
 
 .content {
@@ -162,7 +162,7 @@ body {
     color: white;
 }
 #front-post a:hover {
-    color: #ccffff;
+    color: #05c0ff;
 }
 
 .page-title, .post-title {
@@ -178,15 +178,18 @@ body {
     font-size: 0.8em;
 }
 
-p, .bottom-nav {
+p {
+    line-height: 1.5em;
     font-size: 1em;
 }
 
 a {
     color: black;
+    text-decoration: none;
 }
 a:hover {
     color: #00366c;
+    text-decoration: none;
 }
 
 h2 {
@@ -202,10 +205,10 @@ h2 {
 }
 
 .footer a {
-    color: lightgray;
+    color: white;
 }
 .footer a:hover {
-    color: #ccffff;
+    color: #05c0ff;
 }
 
 label {
@@ -223,23 +226,33 @@ label {
     height: 1.5em;
 }
 
-#submit {
-    color: black;
-    background: white;
+.button, #submit {
+    color: white;
+    /*background: white;*/
+    border: 1px solid white;
     border-radius: 10px;
     padding: 0.5em;
     font-family: bodyFont;
     font-size: 12pt;
-    border: none;
-    margin-top: 0.5em;
+    /*border: none;*/
+    margin: 1em;
+    cursor: pointer;
 }
 
-#submit:hover {
-    background: #eee;
-    color: black;
+.button:hover, #submit:hover {
+    border: 1px solid #05c0ff;
+    color: #05c0ff;
+    text-decoration: none;
 }
 
+#front-action-buttons {
+    display: table;
+    margin: auto;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+}
+/*
 #join-curb {
     border: 3px solid;
     border-color: #90288a;
-}
+}*/
