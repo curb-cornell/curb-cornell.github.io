@@ -1,9 +1,9 @@
-@font-face { /* SF UI display */
+@font-face { /* SF UI display ultralight */
     font-family: titleFont;
     src: url(assets/fonts/SF-UI-Display-Ultralight.otf)
 }
 
-@font-face { /* SF UI text */
+@font-face { /* SF UI text light */
     font-family: bodyFont;
     src: url(assets/fonts/SF-UI-Text-Light.otf)
 }
@@ -118,7 +118,7 @@ body {
 }
 
 .nav-bar ul li ul li a:hover {
-    color: #cc0000;
+    color: #d6332f;
     text-decoration: none;
 }
 
@@ -130,7 +130,7 @@ body {
 }
 
 .post, .page {
-    background: lightgray;
+    background: white;
     border-radius: 20px;
     padding: 2em;
     margin-bottom: 2em;

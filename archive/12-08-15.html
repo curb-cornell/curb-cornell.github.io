@@ -15,6 +15,17 @@ FOOTER - Footer bar (will be generated from footer-template.html)  -->
     <title>CURB</title>
 </head>
 <body>
+  <!-- begin FB script -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- end FB script -->
+
   <!-- Template for site header. Client must provide:
 SITE_URL: URL of site (with trailing slash)
 TITLE: Title of site.
@@ -71,8 +82,11 @@ POST_CONTENT: HTML (not Markdown) content of post. -->
 AUTHOR: Author of site. -->
 
 <div class="footer">
+  <img src="images/fb-logo.png" width="36"/>
+  <img src="images/insta-logo.png" width="36"/>
   <div>Powered by <a href="https://github.com/qema/nanosite">nanosite</a>.</div>
   © 2015 Cornell Undergraduate Research Board.
+  <div class="fb-like" data-href="https://www.facebook.com/cornellcurb/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 </div>
 
 </body>

@@ -15,6 +15,17 @@ FOOTER - Footer bar (will be generated from footer-template.html)  -->
     <title>CURB</title>
 </head>
 <body>
+  <!-- begin FB script -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- end FB script -->
+
   <!-- Template for site header. Client must provide:
 SITE_URL: URL of site (with trailing slash)
 TITLE: Title of site.
@@ -45,7 +56,7 @@ POSTS: Content of all frontpage posts. -->
 <article class="post" id="front-post">
   <header class="post-header">
     <section class="post-content">
-      <p style="color:white">We are the <span style="font-size:1.3em">Cornell Undergraduate Research Board</span>, Cornell's undergraduate research community.<br>We hold poster sessions, provide mentorship and host events with research faculty to help our members find and share their research passions.</p>
+      <p style="color:white">We are the <span style="font-size:1.3em">Cornell Undergraduate Research Board</span>, Cornell's undergraduate research community.<br>We hold poster sessions, provide mentorship and host events with research faculty to help our members explore their research passions.</p>
       <div>
 	<span id="front-action-buttons">
 	  <a href="about-us.html"><span class="button">Learn more</span></a><span class="button">Join CURB</span>
@@ -134,8 +145,11 @@ POST_CONTENT: HTML (not Markdown) content of post. -->
 AUTHOR: Author of site. -->
 
 <div class="footer">
+  <img src="images/fb-logo.png" width="36"/>
+  <img src="images/insta-logo.png" width="36"/>
   <div>Powered by <a href="https://github.com/qema/nanosite">nanosite</a>.</div>
   © 2015 Cornell Undergraduate Research Board.
+  <div class="fb-like" data-href="https://www.facebook.com/cornellcurb/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 </div>
 
 </body>
