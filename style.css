@@ -149,10 +149,9 @@ body {
     }
     .nav-bar ul li:hover > ul,
     .nav-bar ul li ul:hover {
-	margin-top: 0.40em;
+	margin-top: 0.3em;
     }
     .nav-bar ul li ul li {
-	font-size: 1.11em;
 	margin: 0.5em;
     }
 }
