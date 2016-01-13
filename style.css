@@ -145,7 +145,7 @@ body {
     }
     .nav-bar ul li:hover > ul,
     .nav-bar ul li ul:hover {
-	margin-top: 0.35em;
+	margin-top: 0.15em;
     }
     .nav-bar ul li ul li {
 	margin: 0.5em;
