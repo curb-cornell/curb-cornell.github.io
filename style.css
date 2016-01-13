@@ -147,6 +147,9 @@ body {
 	font-size: 0.9em;
 	margin: 0px;
     }
+    .nav-bar ul li ul {
+	min-width: 160px;
+    }
     .nav-bar ul li:hover > ul,
     .nav-bar ul li ul:hover {
 	margin-top: 0.3em;
