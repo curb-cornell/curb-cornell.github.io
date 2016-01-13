@@ -267,7 +267,8 @@ h2 {
 
 label {
     float: left;
-    width: 5%;
+    padding-right: 0.5em;
+    min-width: 5%;
 }
 
 .form-entry {
