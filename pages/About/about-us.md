@@ -14,8 +14,7 @@ If you're interested in getting emails about upcoming events related to undergra
 
 CURB also keeps a calendar of upcoming events sponsored by CURB or of interest to undergraduate researchers.
 
-# Sponsors
-
+## Sponsors
 We thank our sponsors for their continued support for Cornell undergraduate research.
 
 <img src="$img$sponsors/sponsor-neb.jpg" width="30%" />
