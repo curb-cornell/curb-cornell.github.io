@@ -134,6 +134,10 @@ body {
 }
 
 @media (max-width:40em) {
+    .header-menu {
+	margin-left: -2em;
+	margin-right: -2em;
+    }
     .nav-bar {
 	margin-left: 0px;
 	margin-right: 0px;
