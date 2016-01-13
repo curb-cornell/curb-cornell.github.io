@@ -135,6 +135,7 @@ body {
 
 @media (max-width:40em) {
     .nav-bar {
+	margin-left: 0px;
 	text-align: center;
     }
     .nav-bar li {
