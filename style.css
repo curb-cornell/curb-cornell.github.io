@@ -213,6 +213,7 @@ h2 {
 }
 
 .carousel {
+    width: 80vw;
     margin-bottom: 0.5em;
 }
 .slick-slide {
