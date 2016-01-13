@@ -111,7 +111,7 @@ body {
 .nav-bar ul li ul:hover {
     visibility: visible;
     background: white;
-    margin-top: 0.45em;
+    margin-top: 0.4em;
     border-radius: 0px 10px 10px 10px;
 }
 
