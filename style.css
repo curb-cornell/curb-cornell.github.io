@@ -47,8 +47,8 @@ body {
     .header {
 	margin-right: 2em;
     }
-    .header-title {
-	font-size: 4em;
+    .header-tagline {
+	font-size: 1em;
     }
     #tree {
 	width: 0px;
