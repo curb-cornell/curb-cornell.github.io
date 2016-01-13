@@ -8,7 +8,7 @@ body {
     letter-spacing: 0.5pt;
     margin: 0px;
 }
-@media (min-width:40em) {
+@media (min-width:768px) {
     body {
 	margin-left: 10%;
 	margin-right: 10%;
@@ -43,7 +43,7 @@ body {
     height: 4em;
     width: auto;
 }
-@media (max-width:40em) {
+@media (max-width:768px) {
     .header {
 	margin-right: 2em;
     }
@@ -133,7 +133,7 @@ body {
     text-decoration: none;
 }
 
-@media (max-width:40em) {
+@media (max-width:768px) {
     .header-menu {
 	margin-left: -2em;
 	margin-right: -2em;
@@ -256,7 +256,7 @@ h2 {
 .slick-slide img {
     width: 100vw;
 }
-@media (min-width: 40em) {
+@media (min-width: 768px) {
     .slick-slide {
 	width: 80vw;
     }
