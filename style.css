@@ -22,11 +22,6 @@ body {
     width: auto;
     height: 4.8em;
 }
-@media (max-width:40em) {
-    #insignia {
-	margin-right: 1em;
-    }
-}
 
 .header {
     text-align: left;
@@ -49,6 +44,12 @@ body {
     width: auto;
 }
 @media (max-width:40em) {
+    .header {
+	margin-right: 2em;
+    }
+    .header-title {
+	font-size: 4em;
+    }
     #tree {
 	width: 0px;
     }
