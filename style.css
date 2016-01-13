@@ -43,6 +43,11 @@ body {
     height: 4em;
     width: auto;
 }
+@media (max-width:40em) {
+    #tree {
+	width: 0px;
+    }
+}
 
 .header-title:hover {
     color: #05c0ff;
