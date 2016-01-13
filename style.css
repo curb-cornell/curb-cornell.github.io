@@ -133,6 +133,12 @@ body {
     text-decoration: none;
 }
 
+@media (max-width:40em) {
+    .nav-bar li {
+	margin: 0px;
+    }
+}
+
 .content {
     /*
     background: rgba(238, 238, 238, 0.50);
