@@ -47,35 +47,53 @@ MENU: Navigation bar. -->
 </div>
 
   <div class="content">
-    <!-- Template for each archive entry. Client must provide:
-CONTENT: Content of entry.
-POST_TITLE: Title of post.
-PERMALINK: Permalink to this entry. -->
+    <!-- Template for each page. Client must provide:
+PAGE_TITLE: Title of page.
+CONTENT: HTML (not Markdown) content of page. -->
 
-<!-- Template for each post. Client must provide:
-POST_DATE: Date posted.
-POST_TITLE: Title of post.
-POST_CONTENT: HTML (not Markdown) content of post. -->
-
-<article class="post">
-  <header class="post-header">
-    <div class="post-meta">
-      14 Dec 2015
-    </div>
-    <div class="post-title">
-      First G-Body Meeting
+<article class="page">
+  <header class="page-header">
+    <div class="page-title">
+      Join CURB
     </div>
   </header>
-  <section class="post-content">
-    <p>If you missed CURB's first G-body meeting, you can see here what you missed!</p>
-<ul>
-<li>First thing</li>
-<li>Second thing</li>
-<li>Third thing</li>
-</ul>
+  <section class="page-content">
+    <p>
+<div class="carousel">
+  <div><img src="./images/front/1.jpg"></div>
+  <div><img src="./images/front/2.jpg"></div>
+  <div><img src="./images/front/3.jpg"></div>
+  <div><img src="./images/front/4.jpg"></div>
+</div>
+</p>
+
+<script>
+  $(document).ready(function() {
+    $('.carousel').slick({
+      dots: true,
+  autoplay: true,
+  arrows: false,
+      variableWidth: true,
+      adaptiveHeight: true,
+      autoplaySpeed: 6000,
+    });
+  });
+</script>
+
+<p>Join our mailing list for research opportunities and the latest CURB events.</p>
+<form action="#" method="GET">
+  <div class="form-entry">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name">
+  </div>
+  <div class="form-entry">
+    <label for="netid">NetID:</label>
+    <input type="text" name="netid" id="netid"><br>
+  </div>
+  <input type="submit" name="submit" id="submit" value="Sign Up">
+</form>
   </section>
 </article>
-
 
   </div>
   <!-- Template for site footer. Client must provide:

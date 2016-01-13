@@ -1,16 +1,19 @@
 <!-- Template for front page. Client must provide:
 POSTS: Content of all frontpage posts. -->
 
-<div id="front-banner">
-  <img src="./images/poster.jpg">
+<div id="front-banner" class="carousel">
+  <div><img src="./images/front/1.jpg"></div>
+  <div><img src="./images/front/2.jpg"></div>
+  <div><img src="./images/front/3.jpg"></div>
+  <div><img src="./images/front/4.jpg"></div>
 </div>
 <article class="post" id="front-post">
   <header class="post-header">
     <section class="post-content">
-      <p style="color:white">We are the <span style="font-size:1.3em">Cornell Undergraduate Research Board</span>, Cornell's undergraduate research community.<br>We hold poster sessions, provide mentorship and host events with research faculty to help our members explore their research passions.</p>
+      <p style="color:white">We are the <span style="font-size:1.3em">Cornell Undergraduate Research Board</span>, Cornell's undergraduate research community.<br>We hold poster sessions, provide mentorship and host events with research faculty to help you explore your research passions.</p>
       <div>
 	<span id="front-action-buttons">
-	  <a href="about-us.html"><span class="button">Learn more</span></a><span class="button">Join CURB</span>
+	  <a href="about-us.html" class="button">Learn more</a><a href="join.html" class="button">Join CURB</a>
 	</span>
       </div>
     </section>
@@ -18,6 +21,18 @@ POSTS: Content of all frontpage posts. -->
 </article>
 
 $POSTS$
+
+<script>
+  $(document).ready(function() {
+    $('.carousel').slick({
+      dots: true,
+      autoplay: true,
+      variableWidth: true,
+      adaptiveHeight: true,
+      autoplaySpeed: 6000,
+    });
+  });
+</script>
 
 <!--
 <article class="post" id="join-curb">

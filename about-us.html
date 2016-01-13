@@ -10,22 +10,22 @@ FOOTER - Footer bar (will be generated from footer-template.html)  -->
 <!DOCTYPE html>
 <html>
 <head lang="en">
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    <title>CURB</title>
+  <meta charset="utf-8">
+
+  <!-- begin JQuery -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <!-- end JQuery -->
+
+  <!-- begin slick -->
+  <link rel="stylesheet" type="text/css" href="scripts/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="scripts/slick/slick-theme.css"/>
+  <!-- end slick -->
+  
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>CURB</title>
 </head>
 <body>
-  <!-- begin FB script -->
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-    fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-  <!-- end FB script -->
-
   <!-- Template for site header. Client must provide:
 SITE_URL: URL of site (with trailing slash)
 TITLE: Title of site.
@@ -42,7 +42,7 @@ MENU: Navigation bar. -->
     Cornell Undergraduate Research Board
   </div>
   <div class="header-menu">
-    <nav class="nav-bar"><ul><li><a href="./index.html">Home</a></li><li><a href="#">About</a><ul><li><a href="./about-us.html">About Us</a></li><li><a href="./contact.html">Contact</a></li><li><a href="./curb-in-the-news.html">CURB in the News</a></li></ul></li><li><a href="#">Events</a><ul><li><a href="./dinner-series.html">Dinner Series</a></li><li><a href="./lab-tours.html">Lab Tours</a></li><li><a href="./writing-workshops.html">Writing Workshops</a></li></ul></li><li><a href="#">Mentorship</a><ul><li><a href="./pmp-about.html">About Peer Mentorship</a></li><li><a href="./pmp-apply.html">Apply</a></li><li><a href="./pmp-meet-mentors.html">Meet the Mentors</a></li></ul></li><li><a href="#">Research</a><ul><li><a href="./research-faq.html">Research FAQ</a></li><li><a href="./research-openings.html">Current Openings</a></li><li><a href="./research-showcase.html">Showcase</a></li></ul></li></ul></nav>
+    <nav class="nav-bar"><ul><li><a href="./index.html">Home</a></li><li><a href="#">About</a><ul><li><a href="./about-us.html">About Us</a></li><li><a href="./contact.html">Contact</a></li><li><a href="./curb-in-the-news.html">CURB in the News</a></li><li><a href="./join.html">Join CURB</a></li></ul></li><li><a href="#">Events</a><ul><li><a href="./dinner-series.html">Dinner Series</a></li><li><a href="./lab-tours.html">Lab Tours</a></li><li><a href="./writing-workshops.html">Writing Workshops</a></li></ul></li><li><a href="#">Mentorship</a><ul><li><a href="./pmp-about.html">About Peer Mentorship</a></li><li><a href="./pmp-apply.html">Apply</a></li><li><a href="./pmp-meet-mentors.html">Meet the Mentors</a></li></ul></li><li><a href="#">Research</a><ul><li><a href="./research-faq.html">Research FAQ</a></li><li><a href="./research-openings.html">Current Openings</a></li><li><a href="./research-showcase.html">Showcase</a></li></ul></li></ul></nav>
   </div>
 </div>
 
@@ -78,12 +78,17 @@ CONTENT: HTML (not Markdown) content of page. -->
 AUTHOR: Author of site. -->
 
 <div class="footer">
-  <img src="images/fb-logo.png" width="36"/>
-  <img src="images/insta-logo.png" width="36"/>
-  <div>Powered by <a href="https://github.com/qema/nanosite">nanosite</a>.<br>
-  © 2015 Cornell Undergraduate Research Board.</div>
-  <div class="fb-like" data-href="https://www.facebook.com/cornellcurb/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+  <a href="https://www.facebook.com/cornellcurb/"><img src="images/fb-logo.png" width="36"/></a>
+  <a href="https://www.instagram.com/curb_cornell/"><img src="images/insta-logo.png" width="37"/></a>
+  
+  <div style="margin-top:0.4em">Cornell Undergraduate Research Board.</div>
+  <div>Site powered by <a href="https://github.com/qema/nanosite">nanosite</a>.</div>
 </div>
+
+
+  <!-- begin slick -->
+  <script type="text/javascript" src="scripts/slick/slick.min.js"></script>
+  <!-- end slick -->
 
 </body>
 </html>

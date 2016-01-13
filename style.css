@@ -1,19 +1,13 @@
-@font-face { /* SF UI display ultralight */
-    font-family: titleFont;
-    src: url(assets/fonts/SF-UI-Display-Ultralight.otf)
-}
-
-@font-face { /* SF UI text light */
-    font-family: bodyFont;
-    src: url(assets/fonts/SF-UI-Text-Light.otf)
-}
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:100);
 
 body {
-    font-family: bodyFont;
+    font-family: 'Helvetica Neue',Helvetica,Arial, sans-serif;
+    font-weight: 300;
     margin-top: 2em;
-    background-color: #27588b;
+    background-color: #255E89;
     margin-left: 10%;
     margin-right: 10%;
+    letter-spacing: 0.5pt;
 }
 
 #insignia {
@@ -32,10 +26,11 @@ body {
 }
 
 .header-title {
-    font-family: titleFont;
-    font-size: 4.8em;
-    color: white;
     text-decoration: none;
+    font-family: 'Work Sans', 'Helvetica Neue',Helvetica,Arial, sans-serif;
+    font-weight: 200;
+    font-size: 5em;
+    color: white;
 }
 
 #tree {
@@ -118,7 +113,7 @@ body {
 }
 
 .nav-bar ul li ul li a:hover {
-    color: #d6332f;
+    color: #499273;
     text-decoration: none;
 }
 
@@ -130,7 +125,7 @@ body {
 }
 
 .post, .page {
-    background: white;
+    background: #dddddd;
     border-radius: 20px;
     padding: 2em;
     margin-bottom: 2em;
@@ -168,9 +163,10 @@ body {
 .page-title, .post-title {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: titleFont;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    letter-spacing: 0px;
+    font-weight: 200;
     font-size: 2em;
-    font-weight: bold;
     color: black;
 }
 
@@ -185,15 +181,16 @@ p {
 
 a {
     color: black;
-    text-decoration: none;
+    /*text-decoration: none;*/
 }
 a:hover {
-    color: #00366c;
-    text-decoration: none;
+    color: #499273;
+    /*text-decoration: none;*/
 }
 
 h2 {
     font-size: 1.2em;
+    letter-spacing: 0px;
 }
 
 .footer {
@@ -211,6 +208,13 @@ h2 {
     color: #05c0ff;
 }
 
+.carousel {
+    margin-bottom: 0.5em;
+}
+.slick-slide {
+    width: 80vw;
+}
+
 label {
     float: left;
     width: 5%;
@@ -223,23 +227,40 @@ label {
 
 #name, #netid {
     border: none;
-    height: 1.5em;
+    font-size: 1em;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
 }
 
 .button, #submit {
-    color: white;
+    color: black;
+    border: 1px solid black;
+    background: white;
+    margin: 1em 0em;
+    text-ation: none;
     /*background: white;*/
-    border: 1px solid white;
     border-radius: 10px;
-    padding: 0.5em;
-    font-family: bodyFont;
+    padding: 0.5em 0.8em;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
     font-size: 12pt;
     /*border: none;*/
-    margin: 1em;
     cursor: pointer;
 }
 
 .button:hover, #submit:hover {
+    border-color: #499273;
+    color: #499273;
+}
+
+#front-post .button {
+    color: white;
+    background: transparent;
+    border-color: white;
+    margin: 1em;
+    text-decoration: none;
+}
+
+#front-post .button:hover {
     border: 1px solid #05c0ff;
     color: #05c0ff;
     text-decoration: none;
