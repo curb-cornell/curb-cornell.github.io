@@ -117,7 +117,7 @@ body {
 .nav-bar ul li ul:hover {
     visibility: visible;
     background: white;
-    margin-top: 0.45em;
+    margin-top: 0.39em;
     border-radius: 0px 10px 10px 10px;
 }
 
@@ -142,11 +142,6 @@ body {
     .nav-bar li {
 	font-size: 0.8em;
 	margin: 0px;
-    }
-    .nav-bar ul li > ul,
-    .nav-bar ul li ul {
-	margin-top: 10.35em;
-	background: red;
     }
     .nav-bar ul li ul li {
 	font-size: 1.1em;
