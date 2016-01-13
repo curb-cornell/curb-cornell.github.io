@@ -13,8 +13,8 @@ title: Join CURB
   $(document).ready(function() {
     $('.carousel').slick({
       dots: true,
-  autoplay: true,
-  arrows: false,
+      autoplay: true,
+      arrows: false,
       variableWidth: true,
       adaptiveHeight: true,
       autoplaySpeed: 6000,
