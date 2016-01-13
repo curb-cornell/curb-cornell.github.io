@@ -1,13 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:100);
 
 body {
-    font-family: 'Helvetica Neue',Helvetica,Arial, sans-serif;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
     font-weight: 300;
     margin-top: 2em;
     background-color: #255E89;
-    margin-left: 10%;
-    margin-right: 10%;
     letter-spacing: 0.5pt;
+}
+@media (min-width:801px) {
+    body {
+	margin-left: 10%;
+	margin-right: 10%;
+    }
 }
 
 #insignia {
@@ -27,7 +31,7 @@ body {
 
 .header-title {
     text-decoration: none;
-    font-family: 'Work Sans', 'Helvetica Neue',Helvetica,Arial, sans-serif;
+    font-family: 'Work Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-weight: 200;
     font-size: 5em;
     color: white;
