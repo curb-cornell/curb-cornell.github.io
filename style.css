@@ -216,17 +216,17 @@ h2 {
     margin-bottom: 0.5em;
 }
 .slick-slide {
-    width: 80vw;
+    width: 100vw;
 }
 .slick-slide img {
-    width: 80vw;
+    width: 100vw;
 }
 @media (min-width: 40em) {
     .slick-slide {
-	width: 100vw;
+	width: 80vw;
     }
     .slick-slide img {
-	width: 100vw;
+	width: 80vw;
     }
 }
 
