@@ -7,7 +7,7 @@ body {
     background-color: #255E89;
     letter-spacing: 0.5pt;
 }
-@media (min-width:801px) {
+@media (min-width:40em) {
     body {
 	margin-left: 10%;
 	margin-right: 10%;
