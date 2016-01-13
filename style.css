@@ -6,6 +6,7 @@ body {
     margin-top: 2em;
     background-color: #255E89;
     letter-spacing: 0.5pt;
+    margin: 0px;
 }
 @media (min-width:40em) {
     body {
@@ -213,7 +214,6 @@ h2 {
 }
 
 .carousel {
-    width: 80vw;
     margin-bottom: 0.5em;
 }
 .slick-slide {
