@@ -263,7 +263,9 @@ a:hover {
     margin: auto;
 }
 @media (max-width:768px) {
-    width: 100vw;
+    .slick-slide img {
+	width: 100vw;
+    }
 }
 
 label {
