@@ -214,6 +214,9 @@ h2 {
 .slick-slide {
     width: 80vw;
 }
+.slick-slide img {
+    width: 80vw;
+}
 
 label {
     float: left;
