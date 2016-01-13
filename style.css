@@ -137,6 +137,9 @@ body {
     .nav-bar li {
 	margin: 0px;
     }
+    .nav-bar ul li ul li {
+	margin: 0.5em;
+    }
 }
 
 .content {
