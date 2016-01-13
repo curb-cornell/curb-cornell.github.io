@@ -140,11 +140,11 @@ body {
 	text-align: center;
     }
     .nav-bar li {
-	font-size: 0.9em;
+	font-size: 0.8em;
 	margin: 0px;
     }
     .nav-bar ul li ul:hover {
-	margin-top: 0.4em;
+	margin-top: 0.35em;
     }
     .nav-bar ul li ul li {
 	margin: 0.5em;
