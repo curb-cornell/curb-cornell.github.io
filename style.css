@@ -181,11 +181,6 @@ body {
     margin-right: 2em;
 }
 
-#front-banner img {
-    border-radius: 20px 20px;
-    max-width: 100%;
-    display: block;
-}
 #front-post {
     padding-top: 0.5em;
     display: block;
@@ -258,13 +253,16 @@ a:hover {
     margin-bottom: 2em;
 }
 
-.slick-slide img {
+.carousel img {
     width: 80vw;
     margin: auto;
+    border-radius: 20px 20px;
+    display: block;
 }
 @media (max-width:768px) {
-    .slick-slide img {
+    .carousel img {
 	width: 100vw;
+	border-radius: 0px;
     }
 }
 
