@@ -262,6 +262,9 @@ a:hover {
     width: 80vw;
     margin: auto;
 }
+@media (max-width:768px) {
+    width: 100vw;
+}
 
 label {
     float: left;
