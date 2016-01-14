@@ -2,10 +2,10 @@ title: Join CURB
 
 <p>
 <div class="carousel">
-  <div><img src="./images/front/1.jpg"></div>
-  <div><img src="./images/front/2.jpg"></div>
   <div><img src="./images/front/3.jpg"></div>
   <div><img src="./images/front/4.jpg"></div>
+  <div><img src="./images/front/2.jpg"></div>
+  <div><img src="./images/front/1.jpg"></div>
 </div>
 </p>
 
