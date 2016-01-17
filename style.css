@@ -1,7 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:100);
+@font-face {
+    font-family: 'arial_light';
+    src: url('assets/fonts/arial_mt_std_light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
 
 body {
-    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Helvetica Neue',Helvetica,'arial_light',Arial,sans-serif;
     font-weight: 300;
     margin-top: 2em;
     background-color: #255E89;
@@ -89,6 +95,10 @@ body {
     text-decoration: none;
     display: inline-block;
     color: white;
+}
+
+.nav-bar li a[href="#"] {
+    cursor: default;
 }
 
 .nav-bar ul li:hover {
@@ -200,7 +210,7 @@ body {
 .page-title, .post-title {
     margin-top: 0;
     margin-bottom: 0.5em;
-    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Helvetica Neue',Helvetica,'arial_light',Arial,sans-serif;
     letter-spacing: 0px;
     font-weight: 200;
     font-size: 2em;
@@ -216,7 +226,15 @@ h2 {
     font-size: 1.75em;
     font-weight: 200;
     letter-spacing: 0px;
-    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Helvetica Neue',Helvetica,'arial_light',Arial,sans-serif;
+}
+
+.bigger {
+    font-size: 1.3em;
+}
+
+strong, b {
+    font-weight: 500;
 }
 
 p {
@@ -280,7 +298,7 @@ label {
 #name, #netid {
     border: none;
     font-size: 1em;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue",Helvetica,'arial_light',Arial,sans-serif;
     font-weight: 300;
 }
 
@@ -293,7 +311,7 @@ label {
     /*background: white;*/
     border-radius: 10px;
     padding: 0.5em 0.8em;
-    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Helvetica Neue',Helvetica,'arial_light',Arial,sans-serif;
     font-size: 12pt;
     /*border: none;*/
     cursor: pointer;
