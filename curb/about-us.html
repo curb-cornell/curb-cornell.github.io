@@ -1,0 +1,160 @@
+<!-- Template for every page. Client must provide: 
+     SITE_URL - URL of site (with trailing slash)
+     TITLE - Title of site
+     HEADER - Header bar (will be generated from header-template.html)
+     CONTENT - Main content (will be generated from post-template.html)
+     NAV_LINK - Context-based address to link to (depending on the page)
+     NAV_TEXT - The text of the NAV_LINK
+     FOOTER - Footer bar (will be generated from footer-template.html)  -->
+
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- begin JQuery -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- end JQuery -->
+
+    <!-- Begin Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- End Bootstrap -->
+
+    <!-- begin slick -->
+    <link rel="stylesheet" type="text/css" href="scripts/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="scripts/slick/slick-theme.css"/>
+    <!-- end slick -->
+    
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Cornell Undergraduate Research Board</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Template for site header. Client must provide:
+SITE_URL: URL of site (with trailing slash)
+TITLE: Title of site.
+TAGLINE: Tagline.
+MENU: Navigation bar. -->
+
+<div class="header">
+  <!--
+  <div class="row">
+    <div class="col-md-8">
+      <a href="./index.html" class="header-title">
+	<img src="images/logo.png" class="header-logo"/>Cornell Undergraduate Research Board
+      </a>
+    </div>
+    <div class="col-md-4">
+      <div class="header-menu">
+	<nav class="nav-bar"><ul><li><a href="./index.html">Home</a></li><li><a href="#">About</a><ul><li><a href="./about-us.html">About Us</a></li><li><a href="./curb-in-the-news.html">CURB in the News</a></li><li><a href="./execs.html">Meet the Executives</a></li><li><a href="./join.html">Join CURB</a></li></ul></li><li><a href="#">Events</a><ul><li><a href="./dinner-series.html">Dinner Series</a></li><li><a href="./forums.html">Forums</a></li></ul></li><li><a href="#">Mentorship</a><ul><li><a href="./pmp-about.html">About Peer Mentorship</a></li><li><a href="./pmp-apply.html">Apply</a></li><li><a href="./pmp-meet-mentors.html">Meet the Mentors</a></li></ul></li><li><a href="#">Research</a><ul><li><a href="./research-faq.html">Research FAQ</a></li><li><a href="./research-openings.html">Current Openings</a></li></ul></li></ul></nav>
+      </div>
+    </div>
+  </div>-->
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+	<a href="./index.html" class="header-title">
+	  <img src="images/logo.png" class="header-logo"/><span>Cornell Undergraduate Research Board</span>
+	</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-right">
+	<ul class="nav navbar-nav">
+	  <li><a href="./index.html">Home</a></li>
+	  
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="./about-us.html">About Us</a></li>
+              <li><a href="./join.html">Join CURB</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Events <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="./forums.html">Fall/Spring Forums</a></li>
+              <li><a href="./humanities.html">Humanities Showcase</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Mentorship <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="./pmp-about.html">About Peer Mentorship</a></li>
+              <li><a href="./pmp-apply.html">Apply</a></li>
+              <li><a href="./pmp-meet.html">Meet the Mentors</a></li>
+            </ul>
+          </li>
+	</ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+      <div class="content">
+	<!-- Template for each page. Client must provide:
+PAGE_TITLE: Title of page.
+CONTENT: HTML (not Markdown) content of page. -->
+
+<div class="row">
+<article class="page">
+  <header class="page-header">
+    <div class="page-title">
+      About Us
+    </div>
+  </header>
+  <section class="page-content">
+    <p><img alt="The Team" src="./images/team.jpg" /></p>
+<p>We are the <span class="bigger">Cornell Undergraduate Research Board</span>, and our mission is to connect you to exciting research opportunities and people.</p>
+<div class="row">
+<div class="column c2">
+<img src="./images//diagrams/forums.png" />
+<div><a href="forums.html"><span class="bigger">Forums</span></a>, from the Humanities Showcase to the Fall and Spring research forums, combine campus-wide poster sessions and research keynotes.</div>
+</div>
+
+<div class="column c2">
+<img src="./images//diagrams/pmp.png" />
+Our <a href="pmp-about.html"><span class="bigger">Peer Mentorship Program</span></a> helps you map out your research path with a mentor.
+</div>
+
+<div class="column c2">
+<img src="./images//diagrams/dinners.png" />
+Our <a href="dinner-series.html"><span class="bigger">Dinner Series</span></a> bring together students and faculty to share a meal and talk science.
+</div>
+</div>
+
+<div class="row">
+<img src="./images/logo.png" style="width:20%;display:block;margin:auto"/>
+</div>
+
+<h2>Sponsors</h2>
+<p>We thank our sponsors for supporting undergraduate research at Cornell.</p>
+<div class="row">
+<div class="column c2"><img src="./images/sponsors/sponsor-pr.jpg" /></div>
+<div class="column c2"><img src="./images/sponsors/sponsor-glc.png" /></div>
+<div class="column c2"><img src="./images/sponsors/sponsor-neb.jpg" /></div>
+</div>
+  </section>
+</article>
+</div>
+
+      </div>
+      <!-- Template for site footer. Client must provide:
+AUTHOR: Author of site. -->
+
+<div class="footer">
+  <div>Cornell Undergraduate Research Board.</div>
+  <div>Powered by <a href="https://github.com/qema/nanosite">nanosite</a>.</div>
+</div>
+
+    </div>
+    
+    <!-- begin slick -->
+    <script src="scripts/slick/slick.min.js"></script>
+    <!-- end slick -->
+  </body>
+</html>
