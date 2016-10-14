@@ -7,5 +7,5 @@ pushd ..
 git add .
 git commit -m "autopublish"
 git subtree push --prefix=curb/output/ output master
-git push
+#git push
 popd
