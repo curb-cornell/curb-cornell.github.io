@@ -6,6 +6,6 @@ nanosite build
 pushd ..
 git add .
 git commit -m "autopublish"
-git subtree push --prefix=curb/output/ output master
+git subtree push --prefix=curb/output/ output master --force
 #git push
 popd
