@@ -39,7 +39,7 @@ def make_menu(ctx, start=True, site_url=None):
             else:
                 out += s
         else:
-            print(ctx, item)
+            #print(ctx, item)
             out += '<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">' + item.capitalize() + \
                    ' <span class="caret"></span></a>' + \
                    make_menu(ctx[item], False, site_url)
