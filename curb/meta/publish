@@ -3,8 +3,9 @@
 nanosite clean
 nanosite build
 
-cd output
+pushd ..
 git add .
 git commit -m "autopublish"
+git subtree push --prefix=curb/output/ output master
 git push
-cd ..
+popd
