@@ -1,0 +1,117 @@
+<!-- Template for every page. Client must provide: 
+SITE_URL - URL of site (with trailing slash)
+TITLE - Title of site
+HEADER - Header bar (will be generated from header-template.html)
+CONTENT - Main content (will be generated from post-template.html)
+NAV_LINK - Context-based address to link to (depending on the page)
+NAV_TEXT - The text of the NAV_LINK
+FOOTER - Footer bar (will be generated from footer-template.html)  -->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- begin JQuery -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <!-- end JQuery -->
+
+  <!-- begin slick -->
+  <link rel="stylesheet" type="text/css" href="scripts/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="scripts/slick/slick-theme.css"/>
+  <!-- end slick -->
+  
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>CURB</title>
+</head>
+<body>
+  <!-- Template for site header. Client must provide:
+SITE_URL: URL of site (with trailing slash)
+TITLE: Title of site.
+TAGLINE: Tagline.
+MENU: Navigation bar. -->
+
+<div class="header">
+  <a href="./index.html" class="header-title">
+    CURB
+  </a>
+  <img id="tree" src="./assets/tree.png" />
+  <div id="header-right">
+    <span id="insignia"><img src="./assets/cu-logo.png" /></span>
+    <script>
+      (function() {
+      var cx = '001975303021469953531:zayzpvbepog';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+      '//cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
+    <form id="search-form">
+      <input type="text">
+      <input type="submit" value="Search" id="search-button">
+    </form>
+  </div>
+  <div class="header-tagline">
+    Cornell Undergraduate Research Board
+  </div>
+  <div class="header-menu">
+    <nav class="nav-bar"><ul><li><a href="./index.html">Home</a></li><li><a href="#">About</a><ul><li><a href="./about-us.html">About Us</a></li><li><a href="./curb-in-the-news.html">CURB in the News</a></li><li><a href="./execs.html">Meet the Executives</a></li><li><a href="./join.html">Join CURB</a></li></ul></li><li><a href="#">Events</a><ul><li><a href="./dinner-series.html">Dinner Series</a></li><li><a href="./forums.html">Forums</a></li></ul></li><li><a href="#">Mentorship</a><ul><li><a href="./pmp-about.html">About Peer Mentorship</a></li><li><a href="./pmp-apply.html">Apply</a></li><li><a href="./pmp-meet-mentors.html">Meet the Mentors</a></li></ul></li><li><a href="#">Research</a><ul><li><a href="./research-faq.html">Research FAQ</a></li><li><a href="./research-openings.html">Current Openings</a></li></ul></li></ul></nav>
+  </div>
+</div>
+
+  <div class="content">
+    <!-- Template for each page. Client must provide:
+PAGE_TITLE: Title of page.
+CONTENT: HTML (not Markdown) content of page. -->
+
+<article class="page">
+  <header class="page-header">
+    <div class="page-title">
+      Forums
+    </div>
+  </header>
+  <section class="page-content">
+    <h2>Annual Spring and Fall Research Forum</h2>
+<p>The Cornell Undergraduate Research Board (CURB) is proud to host the 30th Annual Undergraduate Spring Research Forum. The Annual Undergraduate Spring Research Forum is the largest undergraduate research forum held at Cornell with over a hundred undergraduates presenters in all fields of research (physics, philosophy, art history, biological engineering, etc.) and over 700 attendees (including undergraduate and graduate students, faculty, staff members, and others).</p>
+<p>Event Details:</p>
+<p>What : CURB's 30th Annual Spring Research Forum<br />
+Where: Physical Science Building Atrium<br />
+When : Wednesday, April 22nd, 2015 from 5:30PM to 7:00PM  </p>
+<p><img alt="Call for Abstracts" src="http://courses2.cit.cornell.edu/CURB/images/photos/Call_For_Abstracts_icon.jpg" /></p>
+<p>If you have any questions or comments, please do not hesitate to email tmd222@cornell.edu</p>
+<h2>Humanities Showcase</h2>
+<p>Come share your creative ideas, discoveries, and research developments you have been working on at Cornell! This is a great opportunity to inform the academic community about your own research, as well as learn about multifaceted research that occurs on campus. If you are passionate about your work, submit a description for your project today. Influence and inspire others! </p>
+<p>Event Details:</p>
+<p>What : CURB's 2nd Annual Undergraduate Humanities Showcase<br />
+Where: Johnson Art Museum<br />
+When : Wednesday, April 23rd, 2014 from 5:00PM to 7:00PM<br />
+Format: ~10-minute oral presentations, opportunities for other presentation styles*  </p>
+<p>*This event is not limited to humanities work. If you have any questions or comments, do not hesitate to email curb@cornell.edu or visit the CURB web page at www.geo.cornell.edu/CURB/ We look forward to seeing your presentation!</p>
+  </section>
+</article>
+
+  </div>
+  <!-- Template for site footer. Client must provide:
+AUTHOR: Author of site. -->
+
+<div class="footer">
+  <a href="https://www.facebook.com/cornellcurb/"><img src="images/fb-logo.png" width="36" style="border:none"/></a>
+  <a href="https://www.instagram.com/curb_cornell/"><img src="images/insta-logo.png" width="37" style="border:none"/></a>
+  
+  <div style="margin-top:0.4em">Cornell Undergraduate Research Board.</div>
+  <div>Site powered by <a href="https://github.com/qema/nanosite">nanosite</a>.</div>
+</div>
+
+
+  <!-- begin slick -->
+  <script type="text/javascript" src="scripts/slick/slick.min.js"></script>
+  <!-- end slick -->
+
+</body>
+</html>

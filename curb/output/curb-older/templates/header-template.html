@@ -1,0 +1,37 @@
+<!-- Template for site header. Client must provide:
+SITE_URL: URL of site (with trailing slash)
+TITLE: Title of site.
+TAGLINE: Tagline.
+MENU: Navigation bar. -->
+
+<div class="header">
+  <a href="$SITE_URL$index.html" class="header-title">
+    $TITLE$
+  </a>
+  <img id="tree" src="$SITE_URL$assets/tree.png" />
+  <div id="header-right">
+    <span id="insignia"><img src="$SITE_URL$assets/cu-logo.png" /></span>
+    <script>
+      (function() {
+      var cx = '001975303021469953531:zayzpvbepog';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+      '//cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
+    <form id="search-form">
+      <input type="text">
+      <input type="submit" value="Search" id="search-button">
+    </form>
+  </div>
+  <div class="header-tagline">
+    $TAGLINE$
+  </div>
+  <div class="header-menu">
+    $MENU$
+  </div>
+</div>

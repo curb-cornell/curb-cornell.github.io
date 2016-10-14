@@ -1,0 +1,10 @@
+#!/bin/bash
+
+nanosite clean
+nanosite build
+
+cd output
+git add .
+git commit -m "autopublish"
+git push
+cd ..
