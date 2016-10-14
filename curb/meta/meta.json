@@ -1,10 +1,14 @@
 {
-  "site": {"title": "Cornell Undergraduate Research Board",
-	   "url": "",
-	   "url`": "http://wanganzhou.com/curb",
-	   "author": "Cornell Undergraduate Research Board",
-	   "tagline": "Cornell Undergraduate Research Board"
-	  },
+  "site": {
+    "title": "Cornell Undergraduate Research Board",
+    "url`": "",
+    "url": "http://wanganzhou.com/curb",
+    "author": "Cornell Undergraduate Research Board",
+    "tagline": "Cornell Undergraduate Research Board"
+  },
+  "routes": {
+    "static/": "/"
+  },
   "banner_start": "</div><div class='row banner'>",
   "banner_top_start": "</div><div class='row banner banner-top'>",
   "banner_end": "</div><div class='row'>",

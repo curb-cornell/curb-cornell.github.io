@@ -1,4 +1,8 @@
 #!/bin/bash
 
 nanosite clean
-nanosite build -o ~/dev/qema.github.io/curb
+nanosite build
+
+git add .
+git commit -m "autopublish"
+git push
