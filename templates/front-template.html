@@ -1,0 +1,60 @@
+<!-- Template for front page. Client must provide:
+POSTS: Content of all frontpage posts. -->
+
+<div id="front-banner" class="carousel">
+  <div><img src="./images/front/1.jpg"></div>
+  <div><img src="./images/front/2.jpg"></div>
+  <div><img src="./images/front/3.jpg"></div>
+  <div><img src="./images/front/4.jpg"></div>
+</div>
+<article class="post" id="front-post">
+  <header class="post-header">
+    <section class="post-content">
+      <p>We are the <span class="bigger">Cornell Undergraduate Research Board</span>, Cornell's undergraduate research community.<br>We hold poster sessions, provide mentorship and host events with research faculty to help you explore your research passions.</p>
+      <div>
+	<span id="front-action-buttons">
+	  <a href="about-us.html" class="button">Learn more</a><a href="join.html" class="button">Join CURB</a>
+	</span>
+      </div>
+    </section>
+  </header>
+</article>
+
+$POSTS$
+
+<script>
+  $(document).ready(function() {
+    $('.carousel').slick({
+      dots: true,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 6000,
+    });
+  });
+</script>
+
+<!--
+<article class="post" id="join-curb">
+  <header class="post-header">
+    <div class="post-title">
+      Join CURB
+    </div>
+  </header>
+  <section class="post-content">
+    <p>
+      Sign up to join our mailing list.
+      <form action="#" method="GET">
+	<div class="form-entry">
+	  <label for="name">Name:</label>
+	  <input type="text" name="name" id="name">
+	</div>
+	<div class="form-entry">
+	  <label for="netid">NetID:</label>
+	  <input type="text" name="netid" id="netid"><br>
+	</div>
+	<input type="submit" name="submit" id="submit" value="Sign Up">
+      </form>
+    </p>
+  </section>
+</article>
+-->
