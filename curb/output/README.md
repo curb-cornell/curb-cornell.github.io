@@ -1,1 +1,0 @@
-# curb-cornell.github.io
