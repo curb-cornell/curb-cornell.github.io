@@ -10,8 +10,8 @@ body {
 }
 @media (min-width: 768px) {
     .content-track {
-	width: 66.6667%;
-	padding: 0;
+        width: 66.6667%;
+        padding: 0;
     }
 }
 
@@ -24,13 +24,14 @@ body {
     z-index: 9999;
     background-color: white;
     /*margin-bottom: 3em;*/
+    min-height: 7em;
 }
 @media (min-width: 768px) {
     .header {
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
         height: 9em;
     }
 }
@@ -75,9 +76,9 @@ body {
 }
 @media (min-width: 768px) {
     .nav>li:last-child .dropdown-menu {
-	left: auto;
-	right: 0;
-	text-align: right;
+        left: auto;
+        right: 0;
+        text-align: right;
     }
 }
 
@@ -94,7 +95,7 @@ body {
 }
 @media (min-width: 1280px) {
     .navbar-header .header-title {
-	font-size: 2.3em;
+        font-size: 2.3em;
     }
 }
 
@@ -118,7 +119,7 @@ body {
     box-shadow: 0px 0px;
 }
 
-.navbar .join-menu-item a {
+.navbar .join-menu-item a, .navbar .give-menu-item a {
     color: #337ab7;
 }
 
@@ -142,12 +143,12 @@ body {
 }
 @media (min-width: 768px) {
     .content {
-	margin-top: 9em;
+        margin-top: 9em;
     }
 }
 @media (min-width: 1280px) {
     .content {
-	margin-top: 7.25em;
+        margin-top: 7.25em;
     }
 }
 
@@ -165,8 +166,8 @@ body {
 
 @media (max-width: 768px) {
     .post p, .page p {
-	padding-left: 1em;
-	padding-right: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 }
 
@@ -205,8 +206,9 @@ p, .bottom-nav {
 }
 /*
 a:hover {
-    color: red;
-}*/
+color: red;
+}
+ */
 
 .section-title {
     font-size: 3.2em;
@@ -238,6 +240,7 @@ h1, h2 {
     border: 4px solid rgb(51, 122, 183);
     border-radius: 2em;
     padding: 1em;
+    margin: 0.5em;
 }
 
 .white-section {
@@ -311,8 +314,13 @@ form {
 }
 
 .icon {
-    width: 50%;
+    width: 25%;
     padding: 1em;
+}
+@media (min-width: 768px) {
+    .icon {
+        width: 50%;
+    }
 }
 
 .btn-group {
@@ -334,7 +342,7 @@ form {
 }
 @media (min-width: 768px) {
     .input-group-row {
-	width: 30%;
+        width: 30%;
     }
 }
 
@@ -344,7 +352,7 @@ form {
 }
 @media (min-width: 768px) {
     .grid-item {
-	width: 24%;
+        width: 24%;
     }
 }
 
@@ -386,9 +394,9 @@ form {
 }
 @media (min-width: 768px) {
     .carousel-text {
-	font-size: 1.5em;
-	max-width: 50%;
-	visibility: visible;
+        font-size: 1.5em;
+        max-width: 50%;
+        visibility: visible;
     }
 }
 .slick-dots {
@@ -401,6 +409,7 @@ form {
     left: 2em;
 }
 .center {
+    display: block;
     text-align: center;
     margin: auto;
     left: 0;
