@@ -77,7 +77,7 @@
 <p></div><div class='row white-section'><div class='row content-track'></p>
 <h1>Princeton Review Auction</h1>
 <p><form action="javascript: submitToGoogleForm('https://docs.google.com/forms/d/e/1FAIpQLSe_GB9a_YQzVfLosNJbNzhzrrYDN0OId2zsoNRP8GAFJEBg9A/formResponse', 'Bid successfully placed.')" method="GET" class="important">
-    <h3 class="center">Current highest bid: <b>$350</b></h3>
+    <h3 class="center">Current highest bid: <b><span id="top-bid" onload="loadTopBid()">$350</span></b></h3>
   <div class="row input-group-row">
     <div class="row" id="status"></div>
     <div class="row">
@@ -107,6 +107,8 @@ Are you interested in attending graduate school? Planning to take the MCAT, LSAT
 <p>Details: Good for any online or in-person review course in Buffalo, Rochester, Syracuse or Albany. Includes instruction, practice tests, and all the latest test prep materials.
 Questions? Contact Kelsey at <a href="mailto:ks795@cornell.edu">ks795@cornell.edu</a>. 
 </p></div></p>
+<script src="https://curb-cornell.github.io/scripts/google-spreadsheet.js"></script>
+
 <script>
 $("#bid").bind("blur", function() {
     var value = $(this).val();
@@ -116,6 +118,21 @@ $("#bid").bind("blur", function() {
     if (value.indexOf("$") == -1) { value = "$" + value; }
     document.getElementById("bid").value = value;
 });
+
+function loadTopBid() {
+    Tabletop.init({key: "https://docs.google.com/spreadsheets/d/1HIzHwC-i9q6viqjltLBx2SOBXrST3RGhMKAPViq7OOg/edit?usp=sharing", callback: loaded, simpleSheet: true});
+}
+function loaded(data, tabletop) {
+    var maxBid = 0.0;
+    for (var line in data) {
+        var bid = parseFloat(data[line].Bid.substring(1));
+        if (bid > maxBid)
+            maxBid = bid;
+    }
+    document.getElementById("top-bid").innerHTML = "$" + maxBid + "";
+    document.getElementById("bid").value = "$" + (maxBid+10) + "";
+}
+document.getElementById("top-bid").addEventListener("load", loadTopBid());
 </script>
 
 <p></div></div><div class='row'></p>
