@@ -116,6 +116,9 @@ $("#bid").bind("blur", function() {
     if (value.indexOf(".") == -1) { value += ".00"; }
     if (value.indexOf(".") != value.length - 3) { value = value.substring(0, value.indexOf(".") + 3); }
     if (value.indexOf("$") == -1) { value = "$" + value; }
+    if (!value.match(/(?=.)^\$?(([1-9][0-9]{0,2}(,[0-9]{3})*)|0)?(\.[0-9]{1,2})?$/)) {
+        value = "$0.00";
+    }
     document.getElementById("bid").value = value;
 });
 
