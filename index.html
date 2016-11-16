@@ -130,11 +130,11 @@ function loaded(data, tabletop) {
         if (bid > maxBid)
             maxBid = bid;
     }
+    document.getElementById("bid").value = "$" + (maxBid+10) + "";
     if (maxBid.indexOf(".") == -1) { maxBid += ".00"; }
     if (maxBid.indexOf(".") != maxBid.length - 3) { maxBid = maxBid.substring(0, maxBid.indexOf(".") + 3); }
     if (maxBid.indexOf("$") == -1) { maxBid = "$" + maxBid; }
     document.getElementById("top-bid").innerHTML = "$" + maxBid + "";
-    document.getElementById("bid").value = "$" + (maxBid+10) + "";
     $("#bid").blur();
 }
 document.getElementById("top-bid").addEventListener("load", loadTopBid());
