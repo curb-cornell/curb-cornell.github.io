@@ -74,6 +74,51 @@
   </div>
   </div>
 
+<p></div><div class='row white-section'><div class='row content-track'></p>
+<h1>Princeton Review Auction</h1>
+<p><form action="javascript: submitToGoogleForm('https://docs.google.com/forms/d/e/1FAIpQLSe_GB9a_YQzVfLosNJbNzhzrrYDN0OId2zsoNRP8GAFJEBg9A/formResponse', 'Bid successfully placed.')" method="GET" class="important">
+    <h3 class="center">Current highest bid: <b>$350</b></h3>
+  <div class="row input-group-row">
+    <div class="row" id="status"></div>
+    <div class="row">
+      <div class="form-group">
+    <label for="bid">Bid:</label>
+    <input type="text" id="bid" value="$360.00" name="entry.1962762714" placeholder="$" id="bid" class="form-control">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="text" name="entry.19421375" id="email" class="form-control">
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" name="submit" id="submit" value="Place Bid" class="btn" style="width: 100%">
+    </div>
+  </div>
+</form>
+<div class="post"><p>
+Are you interested in attending graduate school? Planning to take the MCAT, LSAT, GRE or GMAT?</p>
+<h1></h1>
+<p>Now's your change to secure a <b>Princeton Review Ultimate Course valued at $3,000</b> for comprehensive exam prep. Save thousands of dollars on test prep!</p>
+<h1></h1>
+<p>The auction will be up until <b>Friday, December 2nd at 5pm</b>.</p>
+<h1></h1>
+<p>Details: Good for any online or in-person review course in Buffalo, Rochester, Syracuse or Albany. Includes instruction, practice tests, and all the latest test prep materials.
+Questions? Contact Kelsey at <a href="mailto:ks795@cornell.edu">ks795@cornell.edu</a>. 
+</p></div></p>
+<script>
+$("#bid").bind("blur", function() {
+    var value = $(this).val();
+    console.log(value);
+    if (value.indexOf(".") == -1) { value += ".00"; }
+    if (value.indexOf(".") != value.length - 3) { value = value.substring(0, value.indexOf(".") + 3); }
+    if (value.indexOf("$") == -1) { value = "$" + value; }
+    document.getElementById("bid").value = value;
+});
+</script>
+
+<p></div></div><div class='row'></p>
 <p></div><div class='row gray-section'><div class='row content-track'></p>
 <h1>What We Do</h1>
 <p><div class="text-center">
