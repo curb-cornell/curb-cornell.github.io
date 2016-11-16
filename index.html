@@ -132,6 +132,7 @@ function loaded(data, tabletop) {
     }
     document.getElementById("top-bid").innerHTML = "$" + maxBid + "";
     document.getElementById("bid").value = "$" + (maxBid+10) + "";
+    $("#bid").blur();
 }
 document.getElementById("top-bid").addEventListener("load", loadTopBid());
 </script>
